@@ -6,19 +6,19 @@ import {
   useMemo,
   useRef,
 } from 'react';
+import type {
+  FunctionComponentElement,
+  ReactNode,
+  FunctionComponent,
+} from 'react';
 import {
   block as createBlock,
   mount$,
   patch as patchBlock,
   remove$,
 } from '../million/block';
-import { unwrap } from './utils';
-import type {
-  FunctionComponentElement,
-  ReactNode,
-  FunctionComponent,
-} from 'react';
 import type { Props } from '../million';
+import { unwrap } from './utils';
 
 const IS_SSR_ENVIRONMENT = typeof window === 'undefined';
 
